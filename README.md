@@ -13,7 +13,8 @@ ln -s non-ultimate-vimrc .vim
 ## Mise à jour
 
 ```bash
-~/non-ultimate-vimrc/update
+cd ~/non-ultimate-vimrc
+./update
 ```
 
 ## Liste des plugins
