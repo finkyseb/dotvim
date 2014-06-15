@@ -60,12 +60,12 @@ set noerrorbells
 set novisualbell
 
 "# Limites haute et basse du curseur
-set scrolloff=12
+set scrolloff=8
 
 "# Limites gauche et droite du curseur
 "set nowrap
-"set sidescrolloff=15
-"set sidescroll=1
+set sidescrolloff=3
+set sidescroll=1
 
 " Revient à la même position à la réouverture d'un fichier
 autocmd BufReadPost *
