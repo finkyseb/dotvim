@@ -111,7 +111,7 @@ endif
 cabbrev w!! %!sudo tee > /dev/null %
 
 "# Correction (à activer avec set spell)
-set spelllang=en,fr
+set spelllang=fr,en
 set spellsuggest=5
 
 "# Pas de repliement
