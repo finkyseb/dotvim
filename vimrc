@@ -123,6 +123,14 @@ set nofoldenable
 "# Désactive l'accès au mode Ex
 map Q <Nop>
 
+"# Remap les mouvements normaux (w, b, e) en mouvements CamelCaseMotion
+map <silent> w <Plug>CamelCaseMotion_w
+map <silent> b <Plug>CamelCaseMotion_b
+map <silent> e <Plug>CamelCaseMotion_e
+sunmap w
+sunmap b
+sunmap e
+
 "# Active l'indentation et les plugins spécifiques
 filetype indent on
 filetype plugin on

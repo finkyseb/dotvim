@@ -31,3 +31,4 @@ cd ~/non-ultimate-vimrc
 * [Node.vim](https://github.com/moll/vim-node)
 * [vim-jade](https://github.com/digitaltoad/vim-jade)
 * [mustang (modifié)](https://github.com/croaker/mustang-vim)
+* [CamelCaseMotion.vim](https://github.com/bkad/CamelCaseMotion)
