@@ -29,6 +29,9 @@ set shiftround
 "# Début de ligne au premier caractère non blanc
 map 0 ^
 
+"# Remap <C-space> (= <Nul>) pour l'autocomplétion (<Tab>)
+imap <Nul> <Tab>
+
 "# Numérotation
 set number
 
