@@ -86,7 +86,7 @@ set smartcase
 " Surligne les résultats
 set hlsearch
 " et pour l'enlever : ,/
-nnoremap <Leader><Space> :nohlsearch<CR>
+nnoremap <silent> <Leader><Space> :nohlsearch<CR>
 
 
 "# Désactive les fichiers swap
