@@ -1,3 +1,6 @@
+"# Pas de compatibilité avec Vi (meilleur comportement)
+set nocompatible
+
 "# Encodage général
 set encoding=utf-8
 
@@ -141,6 +144,9 @@ try
   colorscheme mustang
 catch
 endtry
+
+"# Active la coloration syntaxique
+syntax enable
 
 "# Couleur pour GitGutter
 highlight SignColumn ctermbg=232
