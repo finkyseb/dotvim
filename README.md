@@ -7,6 +7,9 @@ Vim est hautement configurable. Parce qu'il n'existe pas de vimrc ultime, voici 
 ```bash
 cd ~
 git clone --recursive https://github.com/ThibautMarty/non-ultimate-vimrc
+cd non-ultimate-vimrc
+./update
+cd ..
 ln -s non-ultimate-vimrc .vim
 ```
 
