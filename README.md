@@ -13,6 +13,13 @@ cd ..
 ln -s non-ultimate-vimrc .vim
 ```
 
+Si cela ne suffit pas, il faut rajouter un lien vers vimrc dans votre répertoire home :
+
+```bash
+cd ~
+ln -s .vim/vimrc .vimrc
+```
+
 ## Mise à jour
 
 ```bash
