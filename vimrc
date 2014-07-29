@@ -123,6 +123,9 @@ set spellsuggest=5
 "# Pas de repliement
 set nofoldenable
 
+"# Effacement (backspace) fonctionnel
+set backspace=indent,eol,start
+
 "# Désactive l'accès au mode Ex
 map Q <Nop>
 
