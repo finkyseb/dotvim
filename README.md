@@ -42,3 +42,4 @@ cd ~/non-ultimate-vimrc
 * [vim-jade](https://github.com/digitaltoad/vim-jade)
 * [mustang (modifié)](https://github.com/croaker/mustang-vim)
 * [CamelCaseMotion.vim](https://github.com/bkad/CamelCaseMotion)
+* [vim-autoclose](https://github.com/Townk/vim-autoclose)
