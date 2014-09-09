@@ -44,3 +44,8 @@ cd ~/non-ultimate-vimrc
 * [CamelCaseMotion.vim](https://github.com/bkad/CamelCaseMotion)
 * [vim-autoclose](https://github.com/Townk/vim-autoclose)
 * [vim-endwise](https://github.com/tpope/vim-endwise)
+
+## Licence
+
+Distribué sous les mêmes conditions que Vim lui-même.
+cf. `:help license`.
