@@ -153,3 +153,6 @@ syntax enable
 
 "# Couleur pour GitGutter
 highlight SignColumn ctermbg=232
+
+"# Mapping pour activer/désactiver vim-autoclose
+nmap <silent> <leader>a :AutoCloseToggle<CR>
