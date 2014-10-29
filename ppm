@@ -1,0 +1,89 @@
+#!/bin/sh
+
+tmp=$(mktemp)
+
+trap "rm $tmp" EXIT
+
+if [ $# -ne 2 ] ; then
+  echo "Usage : ppm [remove|add] submodule"
+  exit 1
+fi
+
+if [ "$(basename `pwd`)" != ".vim" ] ; then
+  echo "Lancez le script dans votre dossier .vim"
+  exit 2
+fi
+
+sm=$2
+bn=$(basename $sm .git)
+
+if [ $1 = "remove" ] ; then
+  line=$(grep -n "$sm" .gitmodules)
+  if [ $? -ne 0 ] ; then
+    echo "Submodule introuvable"
+    exit 3
+  fi
+
+  echo "Suppression..."
+
+  # .gitmodules
+  line=$(echo $line | tail -n1 | cut -d: -f1)
+  awk "{if (NR < $((line - 2)) || NR > $line) print}" .gitmodules > $tmp
+  cp $tmp .gitmodules
+  git add .gitmodules
+
+
+  # .git/config
+  line=$(grep -n "$sm" .git/config | tail -n1 | cut -d: -f1)
+  echo $line
+  awk "{if (NR < $((line - 1)) || NR > $line) print}" .git/config > $tmp
+  cp $tmp .git/config
+
+  # README.md
+  line=$(grep -n "$sm" README.md | tail -n1 | cut -d: -f1)
+  awk "{if (NR != $line) print}" README.md > $tmp
+  cp $tmp README.md
+
+
+  git rm --cached "bundle/$bn"
+  rm -rf "bundle/$bn"
+  rm -rf ".git/modules/bundle/$bn"
+
+  echo "Modified files :"
+  echo " * .gitmodules "
+  #echo " * .git/config "
+  echo " * README.md "
+  echo "Deleted files :"
+  echo " * bundle/$bn"
+else # add
+  if
+    (echo "$sm" | grep -E "^(https?|git)://" || echo "$sm" | grep ".*@.*:.*") > /dev/null
+  then # URL
+    url=$sm
+  else # Github
+    url="https://github.com/$sm"
+  fi
+
+  echo "Installation..."
+  git submodule add -q $url "bundle/$bn" 2> /dev/null
+
+  if [ $? -ne 0 ] ; then
+    echo "Impossible d'installer $sm"
+    exit 2
+  fi
+  # Ajout au README.md
+
+  line=$(grep -n "\* \[.*\]\(.*\)" README.md | tail -n1 | cut -d: -f1)
+  if [ "$line" == "" ] ; then
+    line=$(($(grep -n "## Liste des plugins" README.md | tail -n1 | cut -d: -f1) + 1))
+  fi
+
+  awk "{if (NR == $line) {print; print \"* [$bn]($url)\"} else {print}}" README.md > $tmp
+  cp $tmp README.md
+
+  echo "Fichiers modifiés :"
+  echo " * .gitmodules "
+  echo " * README.md "
+  echo "Fichiers ajoutés :"
+  echo " * bundle/$bn"
+fi
