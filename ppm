@@ -5,7 +5,7 @@ tmp=$(mktemp)
 trap "rm $tmp" EXIT
 
 if [ $# -ne 2 ] ; then
-  echo "Usage : ppm [remove|add] submodule"
+  echo "Usage : ppm remove|add submodule"
   exit 1
 fi
 
@@ -18,16 +18,17 @@ sm=$2
 bn=$(basename $sm .git)
 
 if [ $1 = "remove" ] ; then
-  line=$(grep -n "$sm" .gitmodules)
-  if [ $? -ne 0 ] ; then
+  # .gitmodules
+  line=$(grep -n "$sm" .gitmodules | tail -n1 | cut -d: -f1)
+
+  # (checking)
+  if [ "$line" = "" ] ; then
     echo "Submodule introuvable"
     exit 3
   fi
 
   echo "Suppression..."
 
-  # .gitmodules
-  line=$(echo $line | tail -n1 | cut -d: -f1)
   awk "{if (NR < $((line - 2)) || NR > $line) print}" .gitmodules > $tmp
   cp $tmp .gitmodules
   git add .gitmodules
@@ -35,7 +36,6 @@ if [ $1 = "remove" ] ; then
 
   # .git/config
   line=$(grep -n "$sm" .git/config | tail -n1 | cut -d: -f1)
-  echo $line
   awk "{if (NR < $((line - 1)) || NR > $line) print}" .git/config > $tmp
   cp $tmp .git/config
 
