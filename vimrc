@@ -4,11 +4,32 @@ set nocompatible
 "# Encodage général
 set encoding=utf-8
 
-"# Chargement de pathogen
-call pathogen#infect()
-call pathogen#helptags()
+"# Chargement de Vundle
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+
+"# Liste des plugins
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'ervandew/supertab'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tmhedberg/matchit'
+Plugin 'moll/vim-node'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'croaker/mustang-vim'
+Plugin 'bkad/CamelCaseMotion'
+Plugin 'Townk/vim-autoclose'
+Plugin 'tpope/vim-endwise'
+
+call vundle#end()
+
 
 source ~/.vim/fonctions.vim
+
 
 "# Change le <leader> en , à la place de \
 let mapleader=","

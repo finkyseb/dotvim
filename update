@@ -1,4 +1,6 @@
 #!/bin/sh
 
-git pull origin master
-git submodule foreach git pull origin master
+cd ~/.vim
+
+git pull origin master &&
+vim +"normal i Patientez..." +"PluginInstall!" +"qall!"

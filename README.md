@@ -27,20 +27,31 @@ cd ~/non-ultimate-vimrc
 ./update
 ```
 
+## Personnalisation
+
+Modifiez le fichier `~/.vim/vimrc`. Les plugins sont gérés grâce à [Vundle](https://github.com/gmarik/Vundle.vim).
+
+## Suppression
+
+```bash
+cd ~
+rm -rf .vim
+rm .vimrc
+```
+
 ## Liste des plugins
 
-* [pathogen.vim](https://github.com/tpope/vim-pathogen)
-* [NERD Tree](https://github.com/scrooloose/nerdtree)
-* [NERD Commenter](https://github.com/scrooloose/nerdcommenter)
-* [supertab](http://github.com/ervandew/supertab)
-* [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
-* [fugitive.vim](https://github.com/tpope/vim-fugitive)
+* [nerdtree](https://github.com/scrooloose/nerdtree)
+* [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
+* [supertab](https://github.com/ervandew/supertab)
+* [vim-numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
+* [vim-fugitive](https://github.com/tpope/vim-fugitive)
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 * [matchit](https://github.com/tmhedberg/matchit)
-* [Node.vim](https://github.com/moll/vim-node)
+* [vim-node](https://github.com/moll/vim-node)
 * [vim-jade](https://github.com/digitaltoad/vim-jade)
-* [mustang (modifié)](https://github.com/croaker/mustang-vim)
-* [CamelCaseMotion.vim](https://github.com/bkad/CamelCaseMotion)
+* [mustang-vim](https://github.com/croaker/mustang-vim)
+* [CamelCaseMotion](https://github.com/bkad/CamelCaseMotion)
 * [vim-autoclose](https://github.com/Townk/vim-autoclose)
 * [vim-endwise](https://github.com/tpope/vim-endwise)
 
