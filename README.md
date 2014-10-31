@@ -36,7 +36,6 @@ cd ~/non-ultimate-vimrc
 * [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
 * [fugitive.vim](https://github.com/tpope/vim-fugitive)
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
-* [surround.vim](https://github.com/tpope/vim-surround)
 * [matchit](https://github.com/tmhedberg/matchit)
 * [Node.vim](https://github.com/moll/vim-node)
 * [vim-jade](https://github.com/digitaltoad/vim-jade)
