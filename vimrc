@@ -66,7 +66,10 @@ set listchars=nbsp:¬,tab:»·,trail:·
 
 "# Statusline
 " Informations git (branche +-~) :
-set statusline+=%{strlen(fugitive#statusline())?'\ \ ('.fugitive#statusline()[5:-3].'\ '.HunkSummary().')\ ':''}
+" (Vérifie que le plugin fugitive est accessible)
+if filereadable($HOME.'/.vim/bundle/vim-fugitive/plugin/fugitive.vim')
+  set statusline+=%{strlen(fugitive#statusline())?'\ \ ('.fugitive#statusline()[5:-3].'\ '.HunkSummary().')\ ':''}
+endif
 " Nom du fichier
 set statusline+=%f%<
 " Encodage du fichier

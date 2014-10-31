@@ -4,26 +4,27 @@ Vim est hautement configurable. Parce qu'il n'existe pas de vimrc ultime, voici 
 
 ## Installation
 
-```bash
-cd ~
-git clone --recursive https://github.com/ThibautMarty/non-ultimate-vimrc
-cd non-ultimate-vimrc
-./update
-cd ..
-ln -s non-ultimate-vimrc .vim
-```
-
-Si cela ne suffit pas, il faut rajouter un lien vers vimrc dans votre répertoire home :
+Commencez par tout installer :
+* via Curl :
 
 ```bash
-cd ~
-ln -s .vim/vimrc .vimrc
+curl -L https://raw.githubusercontent.com/ThibautMarty/non-ultimate-vimrc/master/install | sh
 ```
+
+* via Wget :
+
+```bash
+wget --no-check-certificate https://raw.githubusercontent.com/ThibautMarty/non-ultimate-vimrc/master/install -O - | sh
+```
+
+* ou en exécutant les commandes dans le fichier [install](install).
+
+Puis installez tous les plugins avec les commandes de la partie **Mise à jour**.
 
 ## Mise à jour
 
 ```bash
-cd ~/non-ultimate-vimrc
+cd ~/.vim
 ./update
 ```
 
@@ -35,8 +36,7 @@ Modifiez le fichier `~/.vim/vimrc`. Les plugins sont gérés grâce à [Vundle](
 
 ```bash
 cd ~
-rm -rf .vim
-rm .vimrc
+rm -rf .vim .vimrc
 ```
 
 ## Liste des plugins
