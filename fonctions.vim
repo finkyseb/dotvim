@@ -18,3 +18,15 @@ function! HunkSummary()
   let l:summary = GitGutterGetHunkSummary()
   return '+'.l:summary[0].' ~'.l:summary[1].' -'.l:summary[2]
 endfunction
+
+
+function! PasteToggleMode()
+  let g:pastemode = !g:pastemode
+  if g:pastemode == 1
+    set paste
+    echo "paste"
+  else
+    set nopaste
+    echo "nopaste"
+  endif
+endfunction
