@@ -43,7 +43,7 @@ do
           fi
           ;;
       esac
-    done < vimrc
+    done < plugins.vim
 
     echo ""
   fi
