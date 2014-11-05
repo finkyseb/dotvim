@@ -19,7 +19,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/ThibautMarty/non-u
 
 * ou en exécutant les commandes dans le fichier [install](install).
 
-Puis installez tous les plugins avec les commandes de la partie **Mise à jour**.
+Puis installez tous les plugins avec les commandes de la partie [Mise à jour](#user-content-mise-à-jour).
 
 ## Mise à jour
 

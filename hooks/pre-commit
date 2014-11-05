@@ -7,52 +7,59 @@ trap "rm -f $tmp" EXIT
 
 cd ~/.vim
 
-while read rline
-do
-  if [ "$rline" = "## Liste des plugins" ] ; then
-    mode=1
+if
+  git diff --cached --name-status | grep plugins.vim > /dev/null 2>&1
+then
+  while read rline
+  do
+    if [ "$rline" = "## Liste des plugins" ] ; then
+      mode=1
 
-    echo "$rline"
-    echo ""
+      echo "$rline"
+      echo ""
 
-    while read vline
-    do
-      case $vline in
-        "Plugin 'gmarik/Vundle.vim'")
-          ;;
-        Plugin*)
-          plugin=$(echo $vline | cut -d\' -f2)
-          bn=$(basename $plugin)
+      while read vline
+      do
+        case $vline in
+          "Plugin 'gmarik/Vundle.vim'")
+            ;;
+          Plugin*)
+            plugin=$(echo $vline | cut -d\' -f2)
+            bn=$(basename $plugin)
 
-          if
-            (echo $plugin | grep -v /) > /dev/null
-          then
-            echo "* [$bn](https://github.com/vim-scripts/$plugin)"
-          else
-            case $plugin in
-              "git://"*)
-                echo "* [$bn]($plugin)"
-                ;;
-              "file://"*)
-                echo "* $bn"
-                ;;
-              **)
-                echo "* [$bn](https://github.com/$plugin)"
-                ;;
-            esac
-          fi
-          ;;
-      esac
-    done < plugins.vim
+            if
+              (echo $plugin | grep -v /) > /dev/null
+            then
+              echo "* [$bn](https://github.com/vim-scripts/$plugin)"
+            else
+              case $plugin in
+                "git://"*)
+                  echo "* [$bn]($plugin)"
+                  ;;
+                "file://"*)
+                  echo "* $bn"
+                  ;;
+                **)
+                  echo "* [$bn](https://github.com/$plugin)"
+                  ;;
+              esac
+            fi
+            ;;
+        esac
+      done < plugins.vim
 
-    echo ""
-  fi
-  if [ $mode -eq 0 ] ; then
-    echo "$rline"
-  elif [ "$rline" = "## Licence" ] ; then
-    echo "$rline"
-    mode=0
-  fi
-done < README.md > $tmp
+      echo ""
+    fi
+    if [ $mode -eq 0 ] ; then
+      echo "$rline"
+    elif [ "$rline" = "## Licence" ] ; then
+      echo "$rline"
+      mode=0
+    fi
+  done < README.md > $tmp
 
-mv $tmp README.md
+  mv $tmp README.md
+
+  git add README.md
+  git commit --amend
+fi
