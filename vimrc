@@ -180,3 +180,10 @@ highlight SignColumn ctermbg=232
 
 "# Mapping pour activer/désactiver vim-autoclose
 nmap <silent> <leader>a :AutoCloseToggle<CR>
+
+"# Ouvre la fenêtre de quickfix après :make
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
+
+"# Mapping pour lancer :make avec ,m
+:map <Leader>m :make<CR>
