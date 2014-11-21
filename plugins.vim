@@ -32,6 +32,9 @@ sunmap e
 "# Mapping pour activer/désactiver vim-autoclose
 nmap <silent> <Leader>a :AutoCloseToggle<CR>
 
+"# Mapping pour ouvrir/fermer NERDTree
+nmap <silent> <Leader>t :NERDTreeToggle<CR>
+
 "# Active l'indentation et les plugins spécifiques
 filetype indent on
 filetype plugin on
