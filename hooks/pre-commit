@@ -61,5 +61,4 @@ then
   mv $tmp README.md
 
   git add README.md
-  git commit --amend
 fi
