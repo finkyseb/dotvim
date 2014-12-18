@@ -18,6 +18,7 @@ Plugin 'croaker/mustang-vim'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'Townk/vim-autoclose'
 Plugin 'tpope/vim-endwise'
+Plugin 'Lokaltog/vim-easymotion'
 
 call vundle#end()
 

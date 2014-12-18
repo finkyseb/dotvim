@@ -54,6 +54,7 @@ rm -rf .vim .vimrc
 * [CamelCaseMotion](https://github.com/bkad/CamelCaseMotion)
 * [vim-autoclose](https://github.com/Townk/vim-autoclose)
 * [vim-endwise](https://github.com/tpope/vim-endwise)
+* [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
 
 ## Licence
 
