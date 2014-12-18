@@ -64,3 +64,7 @@ set nofoldenable
 
 "# Effacement (backspace) fonctionnel
 set backspace=indent,eol,start
+
+"# Priorité aux fichiers avec un . dans l'autocomplétion
+" e.g : prog.c > prog
+set suffixes+=,,
