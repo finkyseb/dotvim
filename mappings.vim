@@ -20,3 +20,7 @@ nmap <Leader>p :call PasteToggleMode()<CR>
 
 "# Mapping pour lancer :make avec ,m
 map <Leader>m :make<CR>
+
+"# Mapping pour activer/désactiver l'affichage "visuel"
+" des caracètres spéciaux (e.g : tabulation)
+nmap <Leader>l :set list!<CR>
