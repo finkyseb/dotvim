@@ -10,3 +10,13 @@ cabbrev w!! %!sudo tee > /dev/null %
 
 "# Désactive l'accès au mode Ex
 map Q <Nop>
+
+"# Touche pour activer le mode paste
+" (pour désactiver des comportements indésirables)
+" (N'utilise pas l'option pastetoggle car
+" cela crée un mapping aussi dans le mode insertion)
+let g:pastemode = 0
+nmap <Leader>p :call PasteToggleMode()<CR>
+
+"# Mapping pour lancer :make avec ,m
+map <Leader>m :make<CR>
