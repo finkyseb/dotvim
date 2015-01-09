@@ -29,6 +29,9 @@ set number
 set list
 set listchars=nbsp:¬,tab:»·,trail:·
 
+"# Affichage de la dernière ligne, même non entière
+set display=lastline
+
 "# Pas de sonneries
 set noerrorbells
 set novisualbell
