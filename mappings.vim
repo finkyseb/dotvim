@@ -24,3 +24,6 @@ map <Leader>m :make<CR>
 "# Mapping pour activer/désactiver l'affichage "visuel"
 " des caracètres spéciaux (e.g : tabulation)
 nmap <Leader>l :set list!<CR>
+
+"# Mapping pour enlever tous les espaces de fin de ligne
+nmap <Leader>s :%s/\s\+$//e<CR>
