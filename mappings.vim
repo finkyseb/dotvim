@@ -26,4 +26,4 @@ map <Leader>m :make<CR>
 nmap <Leader>l :set list!<CR>
 
 "# Mapping pour enlever tous les espaces de fin de ligne
-nmap <Leader>s :%s/\s\+$//e<CR>
+nmap <Leader>s :%s/\s\+$//e<CR>:nohlsearch<CR>
