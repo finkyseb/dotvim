@@ -49,7 +49,6 @@ rm -rf .vim .vimrc
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 * [matchit](https://github.com/tmhedberg/matchit)
 * [vim-node](https://github.com/moll/vim-node)
-* [vim-jade](https://github.com/digitaltoad/vim-jade)
 * [mustang-vim](https://github.com/croaker/mustang-vim)
 * [CamelCaseMotion](https://github.com/bkad/CamelCaseMotion)
 * [vim-autoclose](https://github.com/Townk/vim-autoclose)
