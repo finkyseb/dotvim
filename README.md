@@ -54,6 +54,7 @@ rm -rf .vim .vimrc
 * [vim-autoclose](https://github.com/Townk/vim-autoclose)
 * [vim-endwise](https://github.com/tpope/vim-endwise)
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
+* [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 
 ## Licence
 

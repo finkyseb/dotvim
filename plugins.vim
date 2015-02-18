@@ -18,6 +18,7 @@ Plugin 'bkad/CamelCaseMotion'
 Plugin 'Townk/vim-autoclose'
 Plugin 'tpope/vim-endwise'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'junegunn/vim-easy-align'
 
 call vundle#end()
 
@@ -34,6 +35,9 @@ nmap <silent> <Leader>a :AutoCloseToggle<CR>
 
 "# Mapping pour ouvrir/fermer NERDTree
 nmap <silent> <Leader>t :NERDTreeToggle<CR>
+
+"# Mapping pour EasyAlign
+vmap <Enter> <Plug>(EasyAlign)
 
 "# Active l'indentation et les plugins spécifiques
 filetype indent on
