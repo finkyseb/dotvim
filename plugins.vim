@@ -19,6 +19,7 @@ Plugin 'Townk/vim-autoclose'
 Plugin 'tpope/vim-endwise'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'vim-scripts/omlet.vim'
 
 call vundle#end()
 

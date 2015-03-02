@@ -55,6 +55,7 @@ rm -rf .vim .vimrc
 * [vim-endwise](https://github.com/tpope/vim-endwise)
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
 * [vim-easy-align](https://github.com/junegunn/vim-easy-align)
+* [omlet.vim](https://github.com/vim-scripts/omlet.vim)
 
 ## Licence
 
