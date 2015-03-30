@@ -56,6 +56,7 @@ rm -rf .vim .vimrc
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
 * [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 * [omlet.vim](https://github.com/vim-scripts/omlet.vim)
+* [DoxygenToolkit.vim](https://github.com/vim-scripts/DoxygenToolkit.vim)
 
 ## Licence
 

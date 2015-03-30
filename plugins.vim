@@ -20,6 +20,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'vim-scripts/omlet.vim'
+Plugin 'vim-scripts/DoxygenToolkit.vim'
 
 call vundle#end()
 
