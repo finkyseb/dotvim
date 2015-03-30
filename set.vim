@@ -47,6 +47,7 @@ set sidescroll=1
 "# Recherche
 " Va au résultat directement
 set incsearch
+set ignorecase
 set smartcase
 " Surligne les résultats
 set hlsearch
