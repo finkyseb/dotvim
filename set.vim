@@ -72,3 +72,6 @@ set backspace=indent,eol,start
 "# Priorité aux fichiers avec un . dans l'autocomplétion
 " e.g : prog.c > prog
 set suffixes+=,,
+
+"# Méthode de cryptage (avec :X)
+set cryptmethod=blowfish2
