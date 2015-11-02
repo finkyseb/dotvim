@@ -41,6 +41,10 @@ nmap <silent> <Leader>t :NERDTreeToggle<CR>
 "# Mapping pour EasyAlign
 vmap <Enter> <Plug>(EasyAlign)
 
+"# Touches pour EasyMotion
+" (par défaut : 'asdghklqwertyuiopzxcvbnmfj;')
+let g:EasyMotion_keys='qsdghklazertyuiopwxcvbnmfj;'
+
 "# Active l'indentation et les plugins spécifiques
 filetype indent on
 filetype plugin on

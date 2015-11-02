@@ -30,7 +30,8 @@ set list
 set listchars=nbsp:¬,tab:»·,trail:·
 
 "# Affichage de la dernière ligne, même non entière
-set display=lastline
+"# Affichage des caractères spéciaux sous form <hex> plutôt que ^X
+set display=lastline,uhex
 
 "# Pas de sonneries
 set noerrorbells
@@ -74,4 +75,15 @@ set backspace=indent,eol,start
 set suffixes+=,,
 
 "# Méthode de cryptage (avec :X)
-set cryptmethod=blowfish2
+if version >= 704 && has("patch399")
+  set cryptmethod=blowfish2
+endif
+
+"# Tilde avec motion
+set tildeop
+
+"# Demande une confirmation plutôt que de lever une erreur (:q, :e)
+set confirm
+
+"# Surligne la ligne courante
+set cursorline

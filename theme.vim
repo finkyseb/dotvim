@@ -11,4 +11,10 @@ syntax enable
 highlight SignColumn ctermbg=232
 
 "# Pas d'italique dans la statusline
-hi StatusLine cterm=none
+highlight StatusLine cterm=italic
+
+"# Pas de soulignement sous la ligne courante
+highlight CursorLine cterm=none
+
+"# Couleurs des TODO et FIXME
+highlight Todo ctermbg=231 ctermfg=232

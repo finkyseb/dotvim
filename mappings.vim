@@ -1,5 +1,6 @@
-"# Début de ligne au premier caractère non blanc
-map 0 ^
+"# Accès au début de ligne : au premier caractère non blanc
+" (le premier caractère est toujours accessible avec | )
+nmap 0 ^
 
 "# Remap <C-space> (= <Nul>) pour l'autocomplétion (<Tab>)
 imap <Nul> <Tab>
