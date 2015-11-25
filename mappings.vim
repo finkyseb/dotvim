@@ -36,3 +36,7 @@ nmap <silent> <Leader><Leader>g :silent r!ctags -R &<CR>:echo "génération des 
 " sous le curseur dans un nouvel onglet
 " (autres correspondances accessibles avec :tn / :tp)
 nmap <Leader>g <C-w><C-]><C-w>T
+
+"# Mapping pour aller à la faute précédente/suivante (spell)
+nmap (s [s
+nmap )s ]s
