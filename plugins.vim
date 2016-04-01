@@ -6,21 +6,19 @@ Plugin 'gmarik/Vundle.vim'
 
 "# Liste des plugins
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'ervandew/supertab'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tmhedberg/matchit'
-Plugin 'moll/vim-node'
-Plugin 'croaker/mustang-vim'
+Plugin 'morhetz/gruvbox'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'Townk/vim-autoclose'
 Plugin 'tpope/vim-endwise'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'vim-scripts/omlet.vim'
-Plugin 'vim-scripts/DoxygenToolkit.vim'
+Plugin 'wesQ3/vim-windowswap'
 
 call vundle#end()
 

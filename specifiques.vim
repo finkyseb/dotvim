@@ -19,6 +19,6 @@ augroup DernierePosition
     \ endif
 augroup END
 
-"# Ouvre la fenêtre de quickfix après :make
+"# Ouvre la fenêtre de quickfix après :make, :grep…
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow

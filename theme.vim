@@ -1,20 +1,28 @@
-"# Thème
-try
-  colorscheme mustang
-catch
-endtry
-
 "# Active la coloration syntaxique
 syntax enable
 
-"# Couleur pour GitGutter
-highlight SignColumn ctermbg=232
+"# Mode sombre
+set background=dark
 
-"# Pas d'italique dans la statusline
-highlight StatusLine cterm=italic
+"# Thème
+try
+  colorscheme gruvbox
+catch
+endtry
+
+"# Couleurs des mots mal écrits (exmaple)
+highlight clear SpellBad
+highlight SpellBad cterm=underline ctermfg=red
+highlight clear SpellCap
+highlight SpellCap cterm=underline ctermfg=blue
+highlight clear SpellLocal
+highlight SpellLocal cterm=underline ctermfg=blue
+highlight clear SpellRare
+highlight SpellRare cterm=underline ctermfg=blue
+
+"# Couleur pour GitGutter
+"highlight clear SignColumn
+"highlight SignColumn ctermbg=235
 
 "# Pas de soulignement sous la ligne courante
 highlight CursorLine cterm=none
-
-"# Couleurs des TODO et FIXME
-highlight Todo ctermbg=231 ctermfg=232

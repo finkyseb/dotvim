@@ -50,6 +50,8 @@ set sidescroll=1
 set incsearch
 set ignorecase
 set smartcase
+" /g par défaut (remettre /g pour annuler)
+set gdefault
 " Surligne les résultats
 set hlsearch
 " et pour l'enlever : ,/
@@ -87,3 +89,9 @@ set confirm
 
 "# Surligne la ligne courante
 set cursorline
+
+"# Formatte le texte en le justifiant à 72 caractères (avec gq)
+set formatprg=par\ -j\ -w72
+
+"# Autorise de changer de buffer sans sauvegarder
+set hidden

@@ -42,21 +42,19 @@ rm -rf .vim .vimrc
 ## Liste des plugins
 
 * [nerdtree](https://github.com/scrooloose/nerdtree)
-* [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
 * [supertab](https://github.com/ervandew/supertab)
 * [vim-numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 * [matchit](https://github.com/tmhedberg/matchit)
-* [vim-node](https://github.com/moll/vim-node)
-* [mustang-vim](https://github.com/croaker/mustang-vim)
+* [gruvbox](https://github.com/morhetz/gruvbox)
 * [CamelCaseMotion](https://github.com/bkad/CamelCaseMotion)
 * [vim-autoclose](https://github.com/Townk/vim-autoclose)
 * [vim-endwise](https://github.com/tpope/vim-endwise)
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
 * [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 * [omlet.vim](https://github.com/vim-scripts/omlet.vim)
-* [DoxygenToolkit.vim](https://github.com/vim-scripts/DoxygenToolkit.vim)
+* [vim-windowswap](https://github.com/wesQ3/vim-windowswap)
 
 ## Licence
 

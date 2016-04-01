@@ -32,6 +32,7 @@ nmap <Leader>s :%s/\s\+$//e<CR>:nohlsearch<CR>
 "# Mapping pour créer le fichier tags (nécessite ctags)
 nmap <silent> <Leader><Leader>g :silent r!ctags -R &<CR>:echo "génération des tags lancée"<CR>
 
+" TODO : buffer
 "# Mapping pour ouvrir la première correspondance du tag
 " sous le curseur dans un nouvel onglet
 " (autres correspondances accessibles avec :tn / :tp)
@@ -40,3 +41,6 @@ nmap <Leader>g <C-w><C-]><C-w>T
 "# Mapping pour aller à la faute précédente/suivante (spell)
 nmap (s [s
 nmap )s ]s
+
+"# Mapping pour aller à la marque au caractère près
+nmap ' `
