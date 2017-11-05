@@ -6,7 +6,7 @@ set background=dark
 
 "# Thème
 try
-  colorscheme gruvbox
+  colorscheme molokai
 catch
 endtry
 
