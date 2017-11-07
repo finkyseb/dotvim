@@ -8,13 +8,13 @@ Commencez par tout installer :
 * via Curl :
 
 ```bash
-curl -L https://raw.githubusercontent.com/ThibautMarty/non-ultimate-vimrc/master/install | sh
+curl -L https://raw.githubusercontent.com/finkyseb/dotvim/master/install | sh
 ```
 
 * via Wget :
 
 ```bash
-wget --no-check-certificate https://raw.githubusercontent.com/ThibautMarty/non-ultimate-vimrc/master/install -O - | sh
+wget --no-check-certificate https://raw.githubusercontent.com/finkyseb/dotvim/master/install -O - | sh
 ```
 
 * ou en exécutant les commandes dans le fichier [install](install).
