@@ -1,5 +1,7 @@
 "# Pas de compatibilité avec Vi (meilleur comportement)
 set nocompatible
+filetype plugin on
+syntax on
 
 "# Encodage général
 set encoding=utf-8

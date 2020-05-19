@@ -5,6 +5,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 "# Liste des plugins
+Plugin 'vimwiki/vimwiki'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
@@ -19,6 +20,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'vim-scripts/omlet.vim'
 Plugin 'wesQ3/vim-windowswap'
+Plugin 'kkvh/vim-docker-tools'
 
 call vundle#end()
 
